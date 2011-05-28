@@ -25,7 +25,7 @@ Ext.onReady(function() {
 		model: 'Flow',
 		proxy: {
 			type: 'ajax',
-			url : 'api/v1.0/list',
+			url : '/sam-server-war/api/v1.0/list',
 			reader: {
 				type: 'json',
 				root: 'aggregated',
@@ -107,7 +107,7 @@ Ext.onReady(function() {
     	region: 'south',
     	margins: '2 5 5 0',
     	layout: 'card',
-    	height: 300,
+    	height: 200,
 		title:'Flow details',
     	items: {
 			xtype: 'fieldset',
